@@ -7,6 +7,9 @@ import './App.css'
 import './login.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Input } from '../components/Input';
+import Register from './Register';
+
+
 function Login(){
     return(
         <>
@@ -35,21 +38,17 @@ function Login(){
                             <Input type="password" placeholder="Password"/>
                         </div>
                         <div className='col-md-2'>
-                       
                             <a  class="btn btn-primary float-right" href="/App">Login</a>
-                           
-                          
-                            <button class="boton-registro">Register</button>
+                            <a class="btn btn-primary float-left ml-12" href="/Register">Register</a>
                         </div>
                     </form>
                     </div>
                 </div>
             </div>
-            
-            <NavBarMatriz/>
             <BrowserRouter>
                 <Routes>
                     <Route path="/App" element={<App></App>}/>
+                    <Route path="/Register" element={<Register></Register>}/>
                 </Routes>
             </BrowserRouter>
         </>

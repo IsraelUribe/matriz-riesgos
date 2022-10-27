@@ -23,7 +23,7 @@ function NavBarMatriz() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Container>
               <Nav>
-                <Nav.Link href="#home">Mapa de Riesgos</Nav.Link>
+                <Nav.Link href="/MapaRiesgos">Mapa de Riesgos</Nav.Link>
                 <Nav.Link href="/Ptar">PTAR</Nav.Link>
                 <Nav.Link href="/Avance">Avance</Nav.Link>
               </Nav>

@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css'
 import Login from './Login'
 import Ptar from './Ptar'
+import Register from './Register'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -21,6 +22,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       crossorigin></script>
 
     <script>var Alert = ReactBootstrap.Alert;</script>
-    <Login/>
+    <Register/>
   </React.StrictMode>
 )

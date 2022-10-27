@@ -8,6 +8,7 @@ import NavBarMatriz from './NavBarMatriz';
 import {Navbar, Nav, Container} from 'react-bootstrap';
 import Ptar from './Ptar';
 import Avance from './Avance';
+import MapaRiesgos from './MapaRiesgos';
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
             <Navbar.Collapse id="basic-navbar-nav">
               <Container>
                 <Nav>
-                  <Nav.Link href="#home">Mapa de Riesgos</Nav.Link>
+                  <Nav.Link href="/MapaRiesgos">Mapa de Riesgos</Nav.Link>
                   <Nav.Link href="/Ptar">PTAR</Nav.Link>
                   <Nav.Link href="/Avance">Avance</Nav.Link>
                 </Nav>
@@ -290,6 +291,7 @@ function App() {
       <BrowserRouter>
         <NavBarMatriz/>
         <Routes>
+        <Route path="/MapaRiesgos" element={<MapaRiesgos></MapaRiesgos>}/>
           <Route path="/Ptar" element={<Ptar></Ptar>}/>
           <Route path="/Avance" element={<Avance></Avance>}/>
         </Routes>

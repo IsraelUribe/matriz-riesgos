@@ -17,31 +17,17 @@ function MapaRiesgos(){
                         <table className="table table-bordered table-hover table-sortable" >
                             <thead>
                                 <tr>
-                                    <th>No. de Riesgo</th>
+                                    <th rowspan="3">No. de Riesgo</th>
+                                    <th rowspan="3">Riesgo</th>
+                                    <th rowspan="3">Clasificación del Riesgo</th>
+                                    <th colspan="2">III. VALORACIÓN DE RISGOS VS.CONTROLES</th>
+                                </tr>
+                                <tr> 
+                                    <th colspan="2">Valoración final</th>
                                 </tr>
                                 <tr>
-                                    <td>No. Riesgo</td>
-                                    <td>Descripción del Riesgo</td>
-                                    <td>Clasificación del Riesgo</td>
-                                    <td>No. Factor de Riesgo</td>
-                                    <td>Factor de Riesgo</td>
-                                    <td>Descripción de la acción de Control</td>
-                                    <td>Unidad Administrativa</td>
-                                    <td>Responsable</td>
-                                    <td>Fecha de inicio</td>
-                                    <td>Fecha de termino</td>
-                                    <td>Medios de Verificación</td>
-                                    <td>1er. Trimestre</td>
-                                    <td>2do. Trimestre</td>
-                                    <td>3er. Trimestre</td>
-                                    <td>4to. Trimestre</td>
-                                    <td>Avance Acumulado</td>
-                                    <td> Actividades realizadas</td>
-                                    <td>Descripción</td>
-                                    <td>Unidad de Medida</td>
-                                    <td>Meta Absoluta (Anual)</td>
-                                    <td>Meta Alcanzada</td>
-                                    <td>Porcentaje de cumplimiento</td>
+                                    <th>Grado de impacto</th>
+                                    <th>Probabilidad de Ocurencia</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -71,4 +57,4 @@ function MapaRiesgos(){
     )
 }
 
-export default MapaRiesgos
+export default MapaRiesgos;
