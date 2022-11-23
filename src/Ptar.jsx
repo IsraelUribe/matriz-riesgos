@@ -14,26 +14,27 @@ function Ptar(){
                 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
             </head>
             <div className="Ptar">
+                <h1>Ptar</h1>
                 <div className="row clearfix">
                     <div className="col-md-12 table-responsive">
                         <table className="table table-bordered table-hover table-sortable" >
                             <thead>
                                 <tr>
-                                    <td>No. Riesgo</td>
-                                    <td>Descripción del Riesgo</td>
-                                    <td>Clasificación del Riesgo</td>
-                                    <td>Valor del impacto</td>
-                                    <td>Valor de Probabilidad</td>
-                                    <td>Cuadrante</td>
-                                    <td>Estrategia</td>
-                                    <td>No. Factor de Riesgo</td>
-                                    <td>Factor de Riesgo</td>
-                                    <td>Desripción de la Acción de control</td>
-                                    <td>Unidad Administrativa</td>
-                                    <td>Responsable</td>
-                                    <td>Fecha de inicio</td>
-                                    <td>Fecha de Término</td>
-                                    <td>Medios de Verificación</td>
+                                    <th>No. Riesgo</th>
+                                    <th>Descripción del Riesgo</th>
+                                    <th>Clasificación del Riesgo</th>
+                                    <th>Valor del impacto</th>
+                                    <th>Valor de Probabilidad</th>
+                                    <th>Cuadrante</th>
+                                    <th>Estrategia</th>
+                                    <th>No. Factor de Riesgo</th>
+                                    <th>Factor de Riesgo</th>
+                                    <th>Desripción de la Acción de control</th>
+                                    <th>Unidad Administrativa</th>
+                                    <th>Responsable</th>
+                                    <th>Fecha de inicio</th>
+                                    <th>Fecha de Término</th>
+                                    <th>Medios de Verificación</th>
                                 </tr>
                             </thead>
                             <tbody>

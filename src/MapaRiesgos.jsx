@@ -12,18 +12,19 @@ function MapaRiesgos(){
                 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
             </head>
             <div className="MapaRiesgos">
+                <h1>Mapa de Riesgos</h1>
                 <div className="row clearfix">
                     <div className="col-md-12 table-responsive">
                         <table className="table table-bordered table-hover table-sortable" >
                             <thead>
                                 <tr>
-                                    <th rowspan="3">No. de Riesgo</th>
-                                    <th rowspan="3">Riesgo</th>
-                                    <th rowspan="3">Clasificación del Riesgo</th>
-                                    <th colspan="2">III. VALORACIÓN DE RISGOS VS.CONTROLES</th>
+                                    <th rowSpan="3">No. de Riesgo</th>
+                                    <th rowSpan="3">Riesgo</th>
+                                    <th rowSpan="3">Clasificación del Riesgo</th>
+                                    <th colSpan="2">III. VALORACIÓN DE RISGOS VS.CONTROLES</th>
                                 </tr>
                                 <tr> 
-                                    <th colspan="2">Valoración final</th>
+                                    <th colSpan="2">Valoración final</th>
                                 </tr>
                                 <tr>
                                     <th>Grado de impacto</th>

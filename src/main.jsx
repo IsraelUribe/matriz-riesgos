@@ -8,20 +8,12 @@ import './login.css'
 import Login from './Login'
 import Ptar from './Ptar'
 import Register from './Register'
+import { BrowserRouter } from 'react-router-dom'
+import MapaRiesgos from './MapaRiesgos'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
-      crossorigin></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
-      crossorigin></script>
-
-    <script>var Alert = ReactBootstrap.Alert;</script>
-    <Register/>
-  </React.StrictMode>
+  <BrowserRouter>
+    <Login/>
+  </BrowserRouter>    
+  
 )

@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Ptar from './Ptar';
+import {Link, Routes, Route } from "react-router-dom";
 function NavBarMatriz() {
   return (
     <>
@@ -23,14 +24,13 @@ function NavBarMatriz() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Container>
               <Nav>
-                <Nav.Link href="/MapaRiesgos">Mapa de Riesgos</Nav.Link>
-                <Nav.Link href="/Ptar">PTAR</Nav.Link>
-                <Nav.Link href="/Avance">Avance</Nav.Link>
+                <Nav.Link to="/MapaRiesgos">Mapa de Riesgos</Nav.Link>
+                <Nav.Link to="/Ptar">PTAR</Nav.Link>
+                <Nav.Link to="/Avance">Avance</Nav.Link>
               </Nav>
             </Container>
           </Navbar.Collapse>
       </Navbar>
-
       <br />
       {/*
       <Navbar bg="light" variant="light">

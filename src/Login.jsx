@@ -1,57 +1,73 @@
+import { useState } from "react";
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './App'
-import NavBarMatriz from './NavBarMatriz';
-import './App.css'
 import './login.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Input } from '../components/Input';
 import Register from './Register';
 
 
 function Login(){
+    const [miLogin, setLogin] = useState('false');
+    const [registro, setResgitro] = useState('false');
+    function iniciarSesion(e){
+        e.preventDefault();
+        setLogin('true');
+        document.getElementById("login").style.display = 'none';
+    }
+    function irRegistro(e){
+        e.preventDefault();
+        setResgitro('true');
+        document.getElementById("login").style.display = 'none';
+    }
+
     return(
         <>
-            <head>
-                <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
-                <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-            </head>
-            <div class="sidenav">
-                <div class="login-main-text">
-                    <h2>Bienvenido a<br/> la Matríz de Riesgos</h2>
-                    <p>Login or register from here to access.</p>
+        <head>
+            <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        </head>
+        <div id="login">
+            <div className="sidenav">
+                <div className="login-main-text">
+                    <h2>Bienvenido a<br/> la Matríz de Administración de Riesgos Institucionales</h2>
+                    <p>Instituto Tecnológico Superior de Huichapan</p>
                 </div>
             </div>
-            <div class="main">
-                <div class="col-md-6 col-sm-12">
+            <div className="main">
+                <div className="col-md-6 col-sm-12">
                     <div>
                     <form style={mystyle}>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label>Usuario</label>
-                            <Input type="text" style={cajas} placeholder="abcdefghij@iteshu.edu.mx"/>
+                            <input type="text"  style={cajas} placeholder="abcdefghij@iteshu.edu.mx" required/>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label>Cotraseña</label>
-                            <Input type="password" placeholder="Password"/>
+                            <input type="password" style={cajas}placeholder="Password" required/>
                         </div>
-                        <div className='col-md-2'>
-                            <a  class="btn btn-primary float-right" href="/App">Login</a>
-                            <a class="btn btn-primary float-left ml-12" href="/Register">Register</a>
+                        <div className='columns-2'>
+                            <Button  className="btn btn-primary float-right" onClick={iniciarSesion}>Login</Button>
+                            <p></p>
+                            <Button className="btn btn-primary float-left ml-12" onClick={irRegistro}>Register</Button>
                         </div>
                     </form>
                     </div>
                 </div>
             </div>
-            <BrowserRouter>
+            {/* <BrowserRouter>
                 <Routes>
-                    <Route path="/App" element={<App></App>}/>
+                    <Route path="/App" element={<App></App>}/> 
                     <Route path="/Register" element={<Register></Register>}/>
                 </Routes>
-            </BrowserRouter>
+            </BrowserRouter> */} 
+            </div>
+            {miLogin === 'true' && <App/>}
+            {registro === 'true' && <Register/>}
         </>
+        
     )
 }
 const mystyle={

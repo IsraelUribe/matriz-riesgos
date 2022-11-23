@@ -3,7 +3,6 @@ import './App.css'
 import './index.css'
 import { Input } from "../components/Input"
 
-
 function Avance(){
     return(
         <>
@@ -14,33 +13,34 @@ function Avance(){
                 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
             </head>
             <div className="Avance">
+                <h1 className='mt-6 mb-4 text-3xl xl:text-4xl font-bold text-gray-800'>Avance</h1>
                 <div className="row clearfix">
                     <div className="col-md-12 table-responsive">
                         <table className="table table-bordered table-hover table-sortable" >
                             <thead>
                                 <tr>
-                                    <td>No. Riesgo</td>
-                                    <td>Descripción del Riesgo</td>
-                                    <td>Clasificación del Riesgo</td>
-                                    <td>No. Factor de Riesgo</td>
-                                    <td>Factor de Riesgo</td>
-                                    <td>Descripción de la acción de Control</td>
-                                    <td>Unidad Administrativa</td>
-                                    <td>Responsable</td>
-                                    <td>Fecha de inicio</td>
-                                    <td>Fecha de termino</td>
-                                    <td>Medios de Verificación</td>
-                                    <td>1er. Trimestre</td>
-                                    <td>2do. Trimestre</td>
-                                    <td>3er. Trimestre</td>
-                                    <td>4to. Trimestre</td>
-                                    <td>Avance Acumulado</td>
-                                    <td> Actividades realizadas</td>
-                                    <td>Descripción</td>
-                                    <td>Unidad de Medida</td>
-                                    <td>Meta Absoluta (Anual)</td>
-                                    <td>Meta Alcanzada</td>
-                                    <td>Porcentaje de cumplimiento</td>
+                                    <th>No. Riesgo</th>
+                                    <th>Descripción del Riesgo</th>
+                                    <th>Clasificación del Riesgo</th>
+                                    <th>No. Factor de Riesgo</th>
+                                    <th>Factor de Riesgo</th>
+                                    <th>Descripción de la acción de Control</th>
+                                    <th>Unidad Administrativa</th>
+                                    <th>Responsable</th>
+                                    <th>Fecha de inicio</th>
+                                    <th>Fecha de termino</th>
+                                    <th>Medios de Verificación</th>
+                                    <th>1er. Trimestre</th>
+                                    <th>2do. Trimestre</th>
+                                    <th>3er. Trimestre</th>
+                                    <th>4to. Trimestre</th>
+                                    <th>Avance Acumulado</th>
+                                    <th> Actividades realizadas</th>
+                                    <th>Descripción</th>
+                                    <th>Unidad de Medida</th>
+                                    <th>Meta Absoluta (Anual)</th>
+                                    <th>Meta Alcanzada</th>
+                                    <th>Porcentaje de cumplimiento</th>
                                 </tr>
                             </thead>
                             <tbody>
